@@ -1,0 +1,72 @@
+div.page.left > div.page-container > div.page-container-dummy {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: calc(100% - 70px);
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+div.page-about-content {
+	margin: 15px;
+	padding: 15px;
+	border-radius: 15px;
+	color: white;
+}
+
+div.page.bottom > div.page-container {
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+div.page.bottom > div.page-container > div.page-button-dummy {
+    margin-bottom: 15px;
+}
+
+div.page.bottom > div.page-container > div.page-container-dummy {
+    position: relative;
+    height: calc(100% - 70px);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+div.page-about-content {
+    max-width: max(75%, 600px);
+    margin: auto;
+}
+
+div.page-about-content > div.about-row {
+    padding: 0 0 3em;
+    text-align: start;
+}
+
+div.page-about-content > div.about-row > div.about-row-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    padding: 0 0 0.5em;
+}
+
+@media screen and (min-width: 600px) {
+    div.page-about-content > div.about-row {
+        display: inline-block;
+    }
+
+    div.page-about-content > div.about-row > div.about-row-header {
+        padding: 0 1em;
+        width: 25%;
+        height: 100%;
+        top: 0;
+        position: sticky;
+        float: left;
+        font-weight: bold;
+        font-size: 1.25em;
+        text-align: end;
+    }
+
+    div.page-about-content > div.about-row > div.about-row-content {
+        width: 75%;
+        float: right;
+    }
+}

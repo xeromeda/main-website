@@ -1,0 +1,21 @@
+div.page.right > div.page-container > div.page-container-dummy {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: calc(100% - 70px);
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+div.page-packages-content {
+	margin: 15px;
+	padding: 15px;
+	border-radius: 15px;
+	color: white;
+}
+
+div.page-packages-content {
+    max-width: max(75%, 600px);
+    margin: auto;
+}

@@ -1,0 +1,111 @@
+@font-face {
+    font-face-name: Aspergit;
+    src: url("aspergit.otf") format("opentype");
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+html {
+    background-image: url("../img/wallpaper.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+div.root-container {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1500px;
+    max-height: 1000px;
+    overflow: hidden;
+}
+
+div.wrapper {
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(calc(-100% / 3));
+    width: 300%;
+    height: 100%;
+    overflow: hidden;
+}
+
+div.wrapper.left-open {
+    transform: translateX(1px);
+}
+
+div.wrapper.right-open {
+    transform: translateX(calc(-100% / 3 * 2));
+}
+
+div.wrapper.down-open {
+    transform: translate(calc(-100% / 3), -100%);
+}
+
+div.page-container {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+div.page {
+    width: calc(100% / 3);
+    height: 100%;
+    float: left;
+}
+
+div.page-button {
+    transition: transform 0.5s;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+div.page-button > img {
+    height: 1.5em;
+    margin: 10px;
+}
+
+div.page-button.leftmain {
+    display: flex;
+    justify-content: end;
+}
+
+div.page-button.rightmain {
+    display: flex;
+    justify-content: start;
+}
+
+div.page-button-dummy {
+    cursor: pointer;
+}
+
+div.page-button-dummy > p {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+div.page-button-dummy > img {
+    width: 40px;
+}
+
+i.fas.fa-chevron-up, i.fas.fa-chevron-left, i.fas.fa-chevron-right, i.fas.fa-chevron-down {
+    font-size: 48px;
+}
