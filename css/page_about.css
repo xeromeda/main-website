@@ -3,7 +3,6 @@ div.page.left > div.page-container > div.page-container-dummy {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: calc(100% - 70px);
 	overflow-x: hidden;
 	overflow-y: auto;
 }
@@ -13,23 +12,6 @@ div.page-about-content {
 	padding: 15px;
 	border-radius: 15px;
 	color: white;
-}
-
-div.page.bottom > div.page-container {
-    text-align: center;
-    color: white;
-    padding: 15px;
-}
-
-div.page.bottom > div.page-container > div.page-button-dummy {
-    margin-bottom: 15px;
-}
-
-div.page.bottom > div.page-container > div.page-container-dummy {
-    position: relative;
-    height: calc(100% - 70px);
-    overflow-x: hidden;
-    overflow-y: auto;
 }
 
 div.page-about-content {

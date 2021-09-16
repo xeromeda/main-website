@@ -86,7 +86,13 @@ div.home-container > span.rule {
 }
 
 table.name > tbody > tr > td.name {
-    font-size: 48px;
+    font-size: 64px;
+}
+
+@media screen and (max-width: 420px) {
+    table.name > tbody > tr > td.name {
+        font-size: 48px;
+    }
 }
 
 table.name > tbody > tr > td.name > * {
@@ -98,12 +104,11 @@ table.name > tbody > tr > td.suffix {
 }
 
 img.logo {
-    max-width: 96px;
+    max-width: 64px;
 }
 
 table.name {
-    margin-top: 16px;
-    margin-bottom: 64px;
+    margin: 16px 0;
 }
 
 table.name > tbody > tr > td:nth-child(odd) {
